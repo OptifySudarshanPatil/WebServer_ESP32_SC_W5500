@@ -61,7 +61,7 @@
   //#error ESP32_C3 not supported yet
   
 #elif ( defined(ARDUINO_ESP32S3_DEV) || defined(ARDUINO_ESP32_S3_BOX) || defined(ARDUINO_TINYS3) || \
-        defined(ARDUINO_PROS3) || defined(ARDUINO_FEATHERS3) )
+        defined(ARDUINO_PROS3) || defined(ARDUINO_FEATHERS3) || defined(ARDUINO_XIAO_ESP32S3))
   #if (_ETHERNET_WEBSERVER_LOGLEVEL_ > 3)
   	#warning Using ESP32_S3. To install esp32-s3-support branch if using core v2.0.2-
   #endif
