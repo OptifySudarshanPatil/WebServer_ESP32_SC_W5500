@@ -82,10 +82,10 @@ extern "C" {
 */
 static inline uint8_t w5500_cal_spi_cs_hold_time(int clock_speed_mhz)
 {
-  if (clock_speed_mhz <= 0 || clock_speed_mhz > 20)
-  {
-    return 0;
-  }
+  // if (clock_speed_mhz <= 0 || clock_speed_mhz > 20)
+  // {
+  //   return 0;
+  // }
 
   int temp = clock_speed_mhz * CS_HOLD_TIME_MIN_NS;
   uint8_t cs_posttrans = temp / 1000;
