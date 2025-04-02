@@ -100,7 +100,7 @@
 
 	#if !defined(SPI_CLOCK_MHZ)
 		// Using 25MHz for W5500, 14MHz for W5100
-		#define SPI_CLOCK_MHZ       25
+		#define SPI_CLOCK_MHZ       80
 	#endif
 
 	#if !defined(INT_GPIO)

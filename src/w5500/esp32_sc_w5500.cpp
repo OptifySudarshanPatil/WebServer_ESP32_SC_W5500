@@ -145,11 +145,11 @@ bool ESP32_W5500::begin(int MISO, int MOSI, int SCLK, int CS, int INT, int SPICL
   eth_mac->set_addr(eth_mac, mac_eth);
 #endif
 
-  if ( (SPICLOCK_MHZ < 14) || (SPICLOCK_MHZ > 25) )
-  {
-    ET_LOGERROR("SPI Clock must be >= 14 and <= 25 MHz for W5500");
-    ESP_ERROR_CHECK(ESP_FAIL);
-  }
+  // if ( (SPICLOCK_MHZ < 14) || (SPICLOCK_MHZ > 25) )
+  // {
+  //   ET_LOGERROR("SPI Clock must be >= 14 and <= 25 MHz for W5500");
+  //   ESP_ERROR_CHECK(ESP_FAIL);
+  // }
 
   /* attach Ethernet driver to TCP/IP stack */
   if (esp_netif_attach(eth_netif, esp_eth_new_netif_glue(eth_handle)) != ESP_OK)
